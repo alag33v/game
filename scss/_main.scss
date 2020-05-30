@@ -151,6 +151,9 @@
   border: none;
   border-radius: 4px;
   background: linear-gradient(183.46deg, #ffb548 11.27%, #f3af34 90.4%);
+  &:hover {
+    background: #faac1c;
+  }
 }
 
 .main__btn {

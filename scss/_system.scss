@@ -1,0 +1,122 @@
+.system {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $black;
+  background: url(../images/system/bg.jpg) center 100% / cover no-repeat;
+  padding-bottom: 190px;
+  @media (max-width: 900px) {
+    font-size: 20px;
+    padding-bottom: 150px;
+  }
+  @media (max-width: 600px) {
+    font-size: 16px;
+    padding-bottom: 100px;
+  }
+}
+
+.system__suptitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  display: block;
+  padding-top: 144px;
+  @media (max-width: 900px) {
+    font-size: 20px;
+    padding-top: 120px;
+  }
+  @media (max-width: 600px) {
+    font-size: 16px;
+    padding-top: 75px;
+  }
+}
+
+.system__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  margin: 10px 0 130px;
+  @media (max-width: 900px) {
+    font-size: 72px;
+    margin-bottom: 75px;
+  }
+  @media (max-width: 600px) {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  @media (max-width: 450px) {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+.system__requirements {
+  display: flex;
+  width: 49%;
+  flex-wrap: wrap;
+  border: 1px solid #979797;
+  padding-right: 0;
+  @media (max-width: 1250px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.requirements__item {
+  width: 293px;
+  height: 125px;
+  padding-top: 15px;
+  padding-left: 18px;
+  border-bottom: 1px solid #979797;
+  &:first-child,
+  &:nth-child(3) {
+    border-right: 1px solid #979797;
+    @media (max-width: 1250px) {
+      border-right: none;
+    }
+  }
+  @media (max-width: 1250px) {
+    width: 100%;
+    text-align: center;
+    padding: 30px 15px 20px;
+    height: auto;
+  }
+}
+.requirements__item--bottom {
+  width: 586px;
+  border-bottom: none;
+  @media (max-width: 1250px) {
+    width: 100%;
+    text-align: center;
+    padding: 30px 15px 20px;
+    height: auto;
+  }
+}
+
+.requirements__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $orange;
+  display: block;
+}
+
+.requirements__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.22;
+  color: $white;
+  margin: 10px 0;
+}

@@ -1,0 +1,131 @@
+.features {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $black;
+  background: url(../images/features/bg.jpg) center 100% / cover no-repeat;
+}
+
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 170px;
+  margin-left: 345px;
+  @media (max-width: 1000px) {
+    margin-left: 25%;
+    padding-top: 150px;
+  }
+  @media (max-width: 900px) {
+    margin-left: 15%;
+    padding-top: 100px;
+  }
+  @media (max-width: 700px) {
+    margin-left: 0;
+    padding-top: 50px;
+  }
+}
+
+.features__suptitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  display: block;
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+  @media (max-width: 600px) {
+    font-size: 16px;
+    margin-left: 120px;
+    text-align: center;
+  }
+}
+
+.features__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $white;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 70px;
+  @media (max-width: 900px) {
+    font-size: 72px;
+  }
+  @media (max-width: 600px) {
+    font-size: 50px;
+    margin-left: 0;
+    margin-left: 120px;
+    text-align: center;
+  }
+  @media (max-width: 450px) {
+    font-size: 32px;
+  }
+}
+
+.features__list {
+  list-style: none;
+  padding-top: 50px;
+  margin-left: 215px;
+  padding-bottom: 270px;
+
+  @media (max-width: 1000px) {
+    padding-bottom: 250px;
+  }
+  @media (max-width: 900px) {
+    padding-bottom: 200px;
+  }
+  @media (max-width: 700px) {
+    padding-bottom: 150px;
+  }
+  @media (max-width: 600px) {
+    padding-top: 25px;
+    margin-left: 150px;
+  }
+  @media (max-width: 450px) {
+    margin-left: 90px;
+    text-align: center;
+  }
+}
+
+.features__item {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $orange;
+  margin-bottom: 40px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    left: -45px;
+    transform: translateY(-70%);
+    border: 1px solid $white;
+    border-radius: 50%;
+    position: absolute;
+    @media (max-width: 600px) {
+      border: none;
+    }
+  }
+  @media (max-width: 900px) {
+    font-size: 26px;
+  }
+  @media (max-width: 600px) {
+    font-size: 20px;
+    max-width: 150px;
+    text-align: center;
+    line-height: 1.11;
+    margin-bottom: 30px;
+  }
+}
