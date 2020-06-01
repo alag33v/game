@@ -17,3 +17,9 @@ body {
   line-height: 1.22;
   color: $white;
 }
+
+@media (max-width: 900px) {
+  body.block {
+    overflow: hidden;
+  }
+}
