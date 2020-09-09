@@ -1,7 +1,18 @@
-*,
-*::before,
-*::after {
+html {
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+  html.block {
+    overflow: hidden;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 .container {
@@ -11,11 +22,12 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.22;
   color: $white;
+  overflow-x: hidden;
 }
 
 @media (max-width: 900px) {

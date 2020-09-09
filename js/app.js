@@ -5,12 +5,14 @@ $(document).ready(function () {
   let burger = document.querySelector('.burger__button');
   let mobileNav = document.querySelector('.header__mobile-nav');
   let mobileLink = document.querySelectorAll('.mobile-nav__link');
+  let html = document.querySelector('html');
   let body = document.querySelector('body');
 
   wrapper.addEventListener('click', (evt) => {
     evt.preventDefault();
     burger.classList.toggle('active');
     mobileNav.classList.toggle('header__mobile-nav--active');
+    html.classList.toggle('block');
     body.classList.toggle('block');
   });
 
@@ -18,6 +20,7 @@ $(document).ready(function () {
     mobileLink[i].addEventListener('click', function (event) {
       burger.classList.toggle('active');
       mobileNav.classList.remove('header__mobile-nav--active');
+      html.classList.toggle('block');
       body.classList.remove('block');
     });
   }
@@ -42,4 +45,52 @@ $(document).ready(function () {
     dots: true,
     speed: 600,
   });
+
+  /* Scrollreveal */
+  const sr = ScrollReveal()
+
+  sr.reveal('.main__title', {
+    duration: 1000,
+    distance: '75px',
+    origin: 'top',
+  })
+
+  sr.reveal('.main__subtitle', {
+    duration: 1000,
+    distance: '25px',
+    origin: 'top',
+    delay: 500,
+  })
+
+  sr.reveal('.title__left', {
+    duration: 1000,
+    viewOffset: {
+      top: 0,
+      right: 0,
+      bottom: 200,
+      left: 0,
+    }
+  })
+
+  sr.reveal('.title__right', {
+    duration: 1000,
+    viewOffset: {
+      top: 0,
+      right: 0,
+      bottom: 200,
+      left: 0,
+    }
+  })
+
+  sr.reveal('.title__top', {
+    duration: 1000,
+    distance: '100px',
+    origin: 'top',
+    viewOffset: {
+      top: 0,
+      right: 0,
+      bottom: 100,
+      left: 0,
+    }
+  })
 });
