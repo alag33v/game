@@ -26,7 +26,7 @@
 }
 
 .quotes__suptitle {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -51,7 +51,7 @@
 }
 
 .quotes__title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 80px;
   font-weight: 400;
   line-height: 1;
@@ -119,24 +119,6 @@
   padding: 10px 15px 15px;
   margin-bottom: 30px;
   position: relative;
-  &::after {
-    content: '';
-    width: 18px;
-    height: 15px;
-    top: 30px;
-    right: 20px;
-    position: absolute;
-    background: url(../images/quotes/twitter.svg) no-repeat center;
-    cursor: pointer;
-    @media (max-width: 700px) {
-      top: 20px;
-      right: 20px;
-    }
-    @media (max-width: 400px) {
-      top: 15px;
-      right: 15px;
-    }
-  }
   &:nth-child(1),
   &:nth-child(3) {
     margin-left: 150px;
@@ -146,6 +128,27 @@
   }
 }
 
+.quotes__twitter {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  pointer-events: none;
+  transition: 1s;
+  @media (max-width: 700px) {
+    top: 20px;
+    right: 20px;
+  }
+  @media (max-width: 400px) {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+.quotes__press-item:hover .quotes__twitter path {
+  opacity: 1;
+  transition: 0.5s;
+}
+
 .press-img {
   position: relative;
   width: 62px;
@@ -153,7 +156,7 @@
   border-radius: 50%;
   z-index: 1;
   &::after {
-    content: '';
+    content: "";
     width: 65px;
     height: 65px;
     border-radius: 50%;
@@ -171,12 +174,21 @@
   }
 }
 
+.quotes__press-item:hover .press-img::after {
+  background-color: #ffa51d;
+  transition: 0.5s;
+}
+
+.press-img path {
+  opacity: 1;
+}
+
 .press__link {
   text-decoration: none;
 }
 
 .press__name {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;

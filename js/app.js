@@ -62,30 +62,50 @@ $(document).ready(function () {
     delay: 500,
   })
 
-  sr.reveal('.title__left', {
-    duration: 1000,
-    viewOffset: {
-      top: 0,
-      right: 0,
-      bottom: 200,
-      left: 0,
-    }
-  })
 
-  sr.reveal('.title__right', {
-    duration: 1000,
+
+  sr.reveal('.suptitle', {
+    duration: 500,
+    distance: '100px',
+    origin: 'top',
     viewOffset: {
       top: 0,
       right: 0,
-      bottom: 200,
+      bottom: 100,
       left: 0,
     }
   })
 
   sr.reveal('.title__top', {
     duration: 1000,
-    distance: '100px',
+    distance: '50px',
     origin: 'top',
+    delay: 250,
+    viewOffset: {
+      top: 0,
+      right: 0,
+      bottom: 100,
+      left: 0,
+    }
+  })
+
+  sr.reveal('.requirements__title', {
+    duration: 1000,
+    distance: '50px',
+    origin: 'top',
+    viewOffset: {
+      top: 0,
+      right: 0,
+      bottom: 100,
+      left: 0,
+    }
+  })
+
+  sr.reveal('.requirements__text', {
+    duration: 1000,
+    distance: '10px',
+    origin: 'top',
+    delay: 500,
     viewOffset: {
       top: 0,
       right: 0,

@@ -164,7 +164,7 @@
   background: linear-gradient(183.46deg, #ffb548 11.27%, #f3af34 90.4%);
   transition: 0.6s;
   &:hover {
-    transform: scale(1.05);
+    background: linear-gradient(183.46deg, #ffaf1b 10%, #ffb23e 99%);
   }
 }
 
@@ -184,6 +184,10 @@
     border-radius: 5px;
     background-color: rgba($black, 0.5);
     position: absolute;
+  }
+  &:hover {
+    transform: scale(1.1);
+    background: linear-gradient(183.46deg, #ffb548 11.27%, #f3af34 90.4%);
   }
   @media (max-width: 900px) {
     margin-top: 30px;
