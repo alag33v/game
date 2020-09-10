@@ -62,8 +62,6 @@ $(document).ready(function () {
     delay: 500,
   })
 
-
-
   sr.reveal('.suptitle', {
     duration: 500,
     distance: '100px',
